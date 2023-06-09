@@ -93,7 +93,8 @@ a {
 
 #hero {
     padding: 50px 0;
-    background: #E5E5E5;
+    background: #fdfdfd;
+
 }
 
 .hero-text h1 {
@@ -160,11 +161,11 @@ a {
 }
 
 #built {
-    padding: 100px 0;
-    background: #E5E5E5;
+    padding: 80px 0;
+    background: #fdfdfd;
 }
 
-.built h1 {
+.background h1 {
     width: 500px;
     font-weight: 700;
     font-size: 32px;
@@ -218,4 +219,105 @@ a {
     flex-direction: column;
     align-items: center;
 
+}
+
+.background {
+    background: #FDFDFDFF url("../img/bg-gradient.png") no-repeat bottom/cover;
+    min-height: 60vh;
+}
+
+#management {
+    background: #fdfdfd;
+    padding: 80px  0;
+}
+
+.management-text h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #22343D;
+}
+
+.management-text h1 {
+    padding: 8px 0 11px 0;
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343D;
+}
+
+.management-text p {
+    padding: 12px 0 25px 0;
+    width: 486px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+
+.management {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#support {
+    background: #fdfdfd;
+    padding: 80px 0;
+}
+
+.support-text h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #22343D;
+    padding-bottom: 8px;
+}
+
+.support-text h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343D;
+}
+
+.support-text p {
+    width: 486px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+    padding: 15px 0;
+}
+
+.support-block ion-icon {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.support-block div {
+    margin-right: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-block {
+    display: flex;
+    align-items: center;
+}
+.support-div-one {
+    background: #FF9900;
+}
+
+.support-div-two {
+    background: #F03E3D;
+}
+
+.support-div-three {
+    background: #4D8DFF;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
