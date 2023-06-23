@@ -5,7 +5,7 @@
 }
 
 .container {
-    width: 1400px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -21,7 +21,6 @@ a {
 }
 
 #header {
-    background: #FFFFFF;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -29,6 +28,7 @@ a {
     -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
 }
 
 .header-logo img {
@@ -37,15 +37,16 @@ a {
 }
 
 .header-logo {
-    padding-right: 237px;
+    padding-right: 150px;
     display: flex;
     align-items: center;
 }
+
 .header-nav a {
     font-weight: 600;
     font-size: 16px;
     color: #22343D;
-    padding: 0 24px;
+    padding: 0 10px;
 }
 
 .header-nav a:hover {
@@ -59,7 +60,7 @@ a {
     background: #02897A;
     border-radius: 4px;
     padding: 10px 23px;
-    margin-right: 24px;
+    margin-right: 12px;
     border: 2px solid #02897A;
 }
 
@@ -73,6 +74,7 @@ a {
     color: #02897A;
     font-size: 25px;
     cursor: pointer;
+    rotate: 180deg;
 }
 
 .header-icon {
@@ -88,7 +90,7 @@ a {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #hero {
@@ -112,6 +114,12 @@ a {
     line-height: 28px;
     color: #22343D;
     padding: 18px 0 45px 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-btn button {
@@ -156,7 +164,7 @@ a {
 
 .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -256,7 +264,7 @@ a {
 .management {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #support {
@@ -319,5 +327,516 @@ a {
 .support {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#collaborative {
+    padding: 80px 0;
+    background: #fdfdfd;
+}
+
+.collaborative-text h5 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #22343D;
+}
+
+.collaborative-text h1 {
+    padding: 8px 0 23px 0;
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343D;
+}
+
+.collaborative-text p {
+    width: 486px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+
+.collaborative-text h3 {
+    padding: 32px 0 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #22343D;
+}
+.collaborative {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#process {
+    padding: 80px 0;
+    background: #fdfdfd;
+}
+
+.process-bg {
+    background: #FDFDFDFF url("../img/process-bg.png") no-repeat bottom/cover;
+    min-height: 70vh;
+}
+
+.process h1 {
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #22343D;
+}
+
+.process p {
+    padding: 16px 0 32px 0;
+    width: 542px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+
+.avator-block div {
+    margin: 0 16px;
+    padding: 15px 24px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2F281E;
+}
+
+.avator-block {
+    display: flex;
+    align-items: center;
+    margin:24px 30px ;
+}
+
+.avator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.process button {
+    margin-top: 24px;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #02897A;
+    border-radius: 4px;
+    border: 2px solid #02897A;
+}
+
+.process button:hover {
+    color: #173A56;
+    background: #FFFFFF;
+    border: 2px solid #BCD0E5;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    padding: 80px 0;
+    background: #fdfdfd;
+}
+
+.content h1 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #22343D;
+}
+
+.content p {
+    padding: 8px 0 33px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #22343D;
+}
+
+/*Swiper styles*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 348px;
+    height: 359px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #bdbdbd;
+}
+
+.swiper-slide img {
+    border-radius: 8px 8px 0 0;
+}
+
+.swiper-slide h5 {
+    padding: 24px 0 12px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #22343D;
+}
+
+.swiper-slide h5 span {
+    font-weight: 700;
+}
+
+.swiper-slide h1 {
+    padding: 0 0 40px 24px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #22343D;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#table {
+    padding: 80px 0;
+}
+
+.table h1 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #22343D;
+    text-align: center;
+}
+
+.table p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #22343D;
+    text-align: center;
+    padding: 8px 0 50px 0;
+}
+
+.table-block {
+    width: 323px;
+    height: 456px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+.table-block:hover {
+    background: #02897A;
+}
+
+.table-block:hover > .text-one,
+.table-block:hover > .text-two,
+.table-block:hover > .table-block-text h3,
+.table-block:hover > .table-block-text div h5,
+.table-block:hover > .table-block-text div span,
+.table-block:hover > .text-three {
+    color: #ffffff;
+}
+
+.table-block:hover > .table-block-btn {
+    background: #ffffff;
+    color: #02897A;
+}
+
+.table-block h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #22343D;
+}
+
+.table-block h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #22343D;
+}
+
+.table-block-text h3 {
+    font-weight: 700;
+    font-size: 76px;
+    text-align: center;
+    color: #02897A;
+    padding-right: 8px;
+}
+
+.table-block-text-one {
+    font-weight: 700;
+    font-size: 24px;
+    color: #02897A;
+}
+
+.table-block-text-two {
+    font-weight: 400;
+    font-size: 16px;
+    color: #AFAFAF;
+}
+
+.table-block-text {
+    display: flex;
+    align-items: center;
+}
+
+.table-block h6 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #22343D;
+}
+
+.table-block-btn {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 11px 25px;
+    background: #02897A;
+    border-radius: 8px;
+}
+
+.table-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#what {
+    padding: 80px 0;
+}
+
+.what h1 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #22343D;
+    text-align: center;
+}
+
+.what p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #22343D;
+    padding: 8px 0 50px 0;
+}
+
+.what-block {
+    width: 301px;
+    height: 236px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 26px;
+}
+
+.stars ion-icon {
+    color: #F3CD03;
+    font-size: 20px;
+}
+
+
+.what-block h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #737373;
+    width: 275px;
+}
+
+.what-block-user div h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #02897A;
+}
+
+.what-block-user div h4 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #252B42;
+}
+
+.what-block-user {
+    display: flex;
+    align-items: center;
+}
+
+.what-block-user div {
+    padding-left: 14px;
+}
+
+.what-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#join {
+    padding: 80px 0;
+}
+
+.join-block {
+    width: 100%;
+    height: 345px;
+    background: #02897A;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.join-block-text h1 {
+    width: 500px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-bottom: 75px;
+}
+
+.join-block-text button {
+    font-weight: 600;
+    font-size: 20px;
+    color: #02897A;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 30px;
+}
+
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    padding: 46px 0;
+}
+
+.footer-general {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.footer-icons div {
+    width: 40px;
+    height: 40px;
+    background: #EDFFFC;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.footer-icons div a {
+    color: #02897A;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #22343D;
+}
+
+.footer-text a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #22343D;
+    padding: 8px 0;
+}
+
+.footer-input h2 {
+    width: 280px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #22343D;
+}
+
+.footer-input input {
+    margin: 34px 0 21px 0;
+    padding: 0 10px;
+    height: 48px;
+    width: 305px;
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+}
+
+.footer-input button{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #02897A;
+    border-radius: 4px;
+    padding: 15px 25px;
+    border: 2px solid #02897A;
+}
+
+.footer-input button:hover {
+    color: #173A56;
+    background: #FFFFFF;
+    border: 2px solid #BCD0E5;
+}
+
+.footer-input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer h1{
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #22343D;
+    text-align: center;
 }
