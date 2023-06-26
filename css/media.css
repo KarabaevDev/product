@@ -5,13 +5,17 @@
 }
 
 @media (max-width: 1024px) {
-    .header-nav a {
-        display: none;
+    .header-logo {
+        padding-right: 40px;
     }
 
     .hero {
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
     }
 
     .built-main-block {
@@ -77,6 +81,29 @@
 
 }
 
+@media (max-width: 992px) {
+    .header-nav,
+    .header-btn,
+    .header-icon {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+
+    }
+
+    .header-btn-one,
+    .header-btn-two,
+    .header-btn-three {
+        font-weight: 600;
+        font-size: 16px;
+        color: #02897A;
+        border-radius: 4px;
+        background: none;
+    }
+}
+
 @media (max-width: 768px) {
 
     .join-block {
@@ -118,6 +145,10 @@
         display: none;
     }
 
+    .hero-text p {
+        width: 99%;
+    }
+
     .hero-btn {
         flex-direction: column;
         align-items: center;
@@ -142,12 +173,15 @@
     .collaborative-text {
         display: flex;
         flex-direction: column;
+        width: 98%;
     }
+
     .management-text p,
     .support-text p,
+    .support-text h6,
     .collaborative-text p,
     .process p {
-        width: 100%;
+        width: 99%;
     }
 
     .avator-block div {
@@ -183,6 +217,8 @@
     .join-img {
         width: 100%;
     }
+
+    .support-text 
 }
 
 @media (max-width: 375px) {
@@ -200,7 +236,7 @@
     }
 
     .management-text p,
-    .support-text p,
+    .support-text h6,
     .collaborative-text p,
     .process p {
         font-size: 13px;
